@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /* --------------- Google Fonts --------------- */
 
-
-
 /* --------------- Body Start --------------- */
 body{
     margin: 0;
@@ -169,7 +167,7 @@ body{
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
+    grid-gap: 2em;
     margin: 0 auto;
 }
 .products .item{
@@ -226,15 +224,60 @@ body{
 }
 /* --------------- Popular_Collection End --------------- */
 
+/* --------------- Extra Section Start --------------- */
+.extra_section .special_offers{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #E02C6D;
+    margin-top: 80px;
+}
+.discount{
+    display: flex;
+}
+.discount_item_1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightcyan;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.discount_item_1 .item_1_image{
+    width: 50%;
+}
+.discount_item_1 .item_1_image img{
+    width: 250px;
+    height: auto;
+}
+.discount_item_1 .item_1_image .bad_image{
+    width: 200px;
+    height: auto;
+}
 
+.discount_item_1 .item_1_content{
+    width: 50%;
+}
+.discount_item_1 .item_1_content .discount_rate {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(138, 138, 138);
+}
+.discount_item_1 .item_1_content .discount_title {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+.discount_item_1 .item_1_content .discount_button {
+    font-size: 20px;
+    font-weight: 500;
+    color: #E02C6D;
+    text-decoration: none;
+}
 
-
-
-
-
-/* --------------- Body Start --------------- */
-
-/* --------------- Body End --------------- */
+/* --------------- Extra Section End --------------- */
 
 
 /* --------------- Footer Start --------------- */
@@ -266,18 +309,7 @@ footer .fab{
     background-color: rgba(182, 182, 182, 0.425);
     border-radius: 50%;
   }
-  
-
 /* --------------- Footer End --------------- */
-
-
-
-
-
-
-
-
-
 
 
  /* ----------------------------------Media Query breckpoint */
@@ -336,7 +368,20 @@ footer .fab{
     .collection_button{
         margin-right: 25px;
     }
-
+    .discount{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .discount_item_1{
+        width: 100%;
+        justify-content: left;
+        overflow: hidden;
+        margin: 10px;
+        padding: 10px;
+    }
+    .discount_item_1 .item_1_image{
+        width: 40%;
+    }
 }
  /* ----------------------------------Media Query breckpoint */
   /* --------------------------------- 768px */
@@ -379,12 +424,13 @@ footer .fab{
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
     }
-
-
+    .discount{
+        flex-direction: column;
+    }
+    .discount_item_1{
+        width: 100%;
+    }
 }
-
-
-
  /* ----------------------------------Media Query breckpoint */
   /* --------------------------------- 620px */
 @media (max-width: 620px){
@@ -427,9 +473,26 @@ footer .fab{
         justify-content: center;
     }
     .collection_button{
-        margin-right: 0;
+        margin-right: 15px;
     }
-   
+    .discount_item_1{
+        flex-direction: column;
+    }
+
+
+    /* discount_item_right_code------------- */
+    .discount_item_1 .item_1_image{
+        width: 100%;
+    }
+    .discount_item_1 .item_1_content{
+        width: 100%;
+    }
+    .discount_item_1 .item_1_content .discount_rate{
+        text-align: left;
+    }
+    .discount_item_1 .item_1_content .discount_button_align{
+        text-align: left;
+    }
 }
 
 /* --------------- Media Query End --------------- */
