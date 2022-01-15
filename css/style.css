@@ -106,7 +106,6 @@ body{
 }
 /* --------------- Main End --------------- */
 
-
 /* --------------- Brands Start --------------- */
 .brands{
     margin: 100px;
@@ -121,10 +120,64 @@ body{
 .brand_logo img{
     margin: 10px 30px;
 }
-
-
-
 /* --------------- Brands End --------------- */
+
+/* --------------- Popular_Collection Start --------------- */
+.popular_collection h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.products{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.products .item{
+    padding: 13px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px rgb(189, 189, 189);
+}
+.content h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.content p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.content .ratting{
+    display: flex;
+    align-items: baseline;
+}
+.content .fas{
+    color: orange;
+}
+.content .ratting> p{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.content .product_contents{
+    font-size: 14px;
+    font-weight: bold;
+    color: #787885;
+}
+/* --------------- Popular_Collection End --------------- */
+
+
 
 
 
