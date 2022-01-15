@@ -109,7 +109,7 @@ body{
 
 /* --------------- Brands Start --------------- */
 .brands{
-    margin-top: 100px;
+    margin: 100px;
 }
 .brand_logo{
     display: flex;
@@ -230,8 +230,8 @@ body{
         height: 214px;
     }
      /* ----------------------------------brands___start */
-    .brands{
-        display: none;
+    .brand_logo{
+        flex-wrap: wrap;
     }
      
 
