@@ -191,6 +191,32 @@ body{
 /* --------------- Body End --------------- */
 
 
+/* --------------- Footer Start --------------- */
+footer{
+    padding: 50px 0;
+    background-color: rgb(4, 0, 56);
+    margin-top: 50px;
+}
+footer .footer_item .footer_text{
+    text-align: center;
+    color: white;
+}
+footer .fab{
+    padding: 20px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+    background-color: rgba(182, 182, 182, 0.425);
+    border-radius: 50%;
+  }
+  
+
+/* --------------- Footer End --------------- */
+
+
 
 
 
