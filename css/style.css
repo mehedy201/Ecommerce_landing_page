@@ -117,11 +117,28 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px;
+    animation-name: hero_image;
+    animation-duration: 3s;
+    transition: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes hero_image{
+    0%{
+        background-position: right;
+    }
+    50%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
 }
 .hero_image img{
     height: 414px;
     width: auto;
 }
+
 /* --------------- Main End --------------- */
 
 /* --------------- Brands Start --------------- */
@@ -230,10 +247,18 @@ footer .footer_item .footer_text{
     text-align: center;
     color: white;
 }
+footer .footer_item .main_heder{
+    font-size: 24px;
+    font-weight: bold;
+}
+footer .footer_item .ptext{
+    font-size: 14px;
+    font-weight: 500;
+}
 footer .fab{
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
     margin: 5px 5px;
