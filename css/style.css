@@ -92,8 +92,6 @@ body{
 .hero_content> p .button span {
     padding-left: 10px;
 }
-
-
 .hero_image{
     transform: translateY(20px);
     background-image: url(/image/photos/Circle\ design.svg);
@@ -106,11 +104,30 @@ body{
     height: 414px;
     width: auto;
 }
-
-
-
-
 /* --------------- Main End --------------- */
+
+
+/* --------------- Brands Start --------------- */
+.brands{
+    margin-top: 100px;
+}
+.brand_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA
+}
+.brand_logo img{
+    margin: 10px 30px;
+}
+
+
+
+/* --------------- Brands End --------------- */
+
+
+
 
 
 /* --------------- Body Start --------------- */
@@ -168,8 +185,16 @@ body{
     .hero_image img{
         height: 314px;
     }
+    /* ----------------------------------brands___start */
+    .brand_logo{
+        width: 100%;
+        margin: 0 10px;
+    }
+    .brand_logo img{
+        height: 20px;
+        width: auto;
+    }
     
-
 
 }
  /* ----------------------------------Media Query breckpoint */
@@ -204,6 +229,14 @@ body{
     .hero_image img{
         height: 214px;
     }
+     /* ----------------------------------brands___start */
+    .brands{
+        display: none;
+    }
+     
+
+
+
 }
 
 
