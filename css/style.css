@@ -1,0 +1,250 @@
+/* --------------- Google Fonts --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* --------------- Google Fonts --------------- */
+
+
+
+/* --------------- Body Start --------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* --------------- Body End --------------- */
+/* Container  */
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* Container  */
+
+/* --------------- Navigation Start --------------- */
+.navigation_menu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.responsive_menu_icon{
+    display: none;
+}
+.logo h1{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+.menu_item_and_cart{
+    display: flex;
+    align-items: center;
+}
+.menu_item ul{
+    display: flex;
+    align-items: center;
+}
+.menu_item ul li{
+    list-style-type: none;
+    margin: 34px;
+
+}
+.menu_item ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.cart_icon .cart{
+    font-size: 16px;
+    color: #000000;
+    margin-left: 3px;
+}
+/* --------------- Navigation End --------------- */
+
+/* --------------- Main Start --------------- */
+.hero_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_content{
+    width: 50%;
+}
+.hero_content> h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.hero_content> p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.hero_content> p .button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 30px;
+    border-radius: 25px;
+}
+.hero_content> p .button span {
+    padding-left: 10px;
+}
+
+
+.hero_image{
+    transform: translateY(20px);
+    background-image: url(/image/photos/Circle\ design.svg);
+    background-size: 97%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+.hero_image img{
+    height: 414px;
+    width: auto;
+}
+
+
+
+
+/* --------------- Main End --------------- */
+
+
+/* --------------- Body Start --------------- */
+
+/* --------------- Body End --------------- */
+
+
+
+
+
+
+
+
+
+
+
+ /* ----------------------------------Media Query breckpoint */
+  /* --------------------------------- 1280px */
+@media (max-width: 1280px){
+    .container{
+        width: 90%;
+    }
+}
+ /* ----------------------------------Media Query breckpoint */
+  /* --------------------------------- 1120px */
+@media (max-width: 1120px){
+    .container{
+        width: 90%;
+    }
+    /* ----------------------------------menu___start */
+    .responsive_menu_icon{
+        display: block;
+    }
+    .menu_item{
+        display: none;
+    }
+    .responsive_menu_icon{
+        display: block;
+        font-size: 24px;
+    }
+    .responsive_menu_icon .ic{
+        color: #1B1B1B;
+    }
+    /* ----------------------------------main___start */
+    .hero_content> h1{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero_content> p{
+        font-weight: 500;
+    }
+    .hero_image{
+        background-size: 90%;
+    }
+    .hero_image img{
+        height: 314px;
+    }
+    
+
+
+}
+ /* ----------------------------------Media Query breckpoint */
+  /* --------------------------------- 768px */
+@media (max-width: 768px){
+    .container{
+        width: 95%;
+    }
+    /* ----------------------------------menu___start */
+    .logo h1{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .responsive_menu_icon{
+        display: block;
+        font-size: 24px;
+    }
+    .responsive_menu_icon .ic{
+        color: #1B1B1B;
+    }
+    .cart_icon .cart{
+        font-size: 24px;
+    }
+    .menu_item{
+        display: none;
+    }
+    /* ----------------------------------main___start */
+    .hero_content> h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .hero_image img{
+        height: 214px;
+    }
+}
+
+
+
+ /* ----------------------------------Media Query breckpoint */
+  /* --------------------------------- 620px */
+@media (max-width: 620px){
+    .container{
+        width: 95%;
+    }
+    /* ----------------------------------menu___start */
+    .logo h1{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .responsive_menu_icon{
+        display: block;
+        font-size: 24px;
+    }
+    .responsive_menu_icon .ic{
+        color: #1B1B1B;
+    }
+    .cart_icon .cart{
+        font-size: 24px;
+    }
+    .menu_item{
+        display: none;
+    }
+    /* ----------------------------------main___start */
+    .hero_area{
+        flex-direction: column-reverse;
+    }
+    .hero_content{
+        width: 100%;
+    }
+    .hero_content h1, p {
+        text-align: center;
+    }
+    /* ----------------------------------main___end */
+
+   
+}
+
+/* --------------- Media Query End --------------- */
