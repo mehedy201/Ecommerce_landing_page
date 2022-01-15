@@ -92,6 +92,24 @@ body{
 .hero_content> p .button span {
     padding-left: 10px;
 }
+.animation{
+    animation-name: button_animation;
+    animation-duration: 2s;
+    transition: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes button_animation{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 20px;
+    }
+    100%{
+        left: 0px;
+    }
+}
 .hero_image{
     transform: translateY(20px);
     background-image: url(/image/photos/Circle\ design.svg);
@@ -178,6 +196,17 @@ body{
     font-weight: bold;
     color: #787885;
 }
+.collection_button{
+    font-size: 16px;
+    font-weight: bold;
+    color: #E02C6D;
+    text-align: right;
+    margin-right: 64px;
+    margin-top: 30px;
+}
+.collection_button> span{
+    padding-left: 10px;
+}
 /* --------------- Popular_Collection End --------------- */
 
 
@@ -203,11 +232,11 @@ footer .footer_item .footer_text{
 }
 footer .fab{
     padding: 20px;
-    font-size: 25px;
+    font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 5px;
     color: white;
     background-color: rgba(182, 182, 182, 0.425);
     border-radius: 50%;
@@ -279,7 +308,9 @@ footer .fab{
     .products{
         width: 95%;
     }
-    
+    .collection_button{
+        margin-right: 25px;
+    }
 
 }
  /* ----------------------------------Media Query breckpoint */
@@ -369,6 +400,9 @@ footer .fab{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+    }
+    .collection_button{
+        margin-right: 0;
     }
    
 }
