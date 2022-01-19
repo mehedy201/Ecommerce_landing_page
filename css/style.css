@@ -110,7 +110,7 @@ body{
 }
 .hero_image{
     transform: translateY(20px);
-    background-image: url(/image/photos/Circle-design.svg);
+    background-image: url(/image/photos/circle-design.svg);
     background-size: 97%;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,6 +234,7 @@ body{
 }
 .discount{
     display: flex;
+    justify-items: center;
 }
 .discount_item_1{
     width: 50%;
@@ -247,6 +248,7 @@ body{
 }
 .discount_item_1 .item_1_image{
     width: 50%;
+    justify-items: center;
 }
 .discount_item_1 .item_1_image img{
     width: 250px;
@@ -375,7 +377,8 @@ footer .fab{
     .discount_item_1{
         width: 100%;
         justify-content: left;
-        overflow: hidden;
+        justify-items: center;
+
         margin: 10px;
         padding: 10px;
     }
@@ -470,7 +473,7 @@ footer .fab{
     .products{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+        justify-items: center;
     }
     .collection_button{
         margin-right: 15px;
