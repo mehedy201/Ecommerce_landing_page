@@ -110,7 +110,7 @@ body{
 }
 .hero_image{
     transform: translateY(20px);
-    background-image: url(/image/photos/circle-design.svg);
+    background-image: url(../image/photos/circle-design.svg);
     background-size: 97%;
     background-position: center;
     background-repeat: no-repeat;
